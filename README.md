@@ -7,7 +7,7 @@ Yashiro is a templating engine with the external stores.
   * [Usage](#usage)
   * [CLI Tool](#cli-tool)
     * [Install](#install)
-  * [Example](#example)
+    * [Example](#example)
 
 ## Service
 
@@ -30,6 +30,6 @@ go get github.com/s-dwinter/yashiro
 
 Download binary from [release page](https://github.com/s-dwinter/yashiro/releases).
 
-## Example
+### Example
 
 See [example](./example/).
