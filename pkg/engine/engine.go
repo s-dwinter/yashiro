@@ -16,11 +16,11 @@ type Engine interface {
 type engine struct {
 	client   client.Client
 	template *template.Template
-	option   *engineOpts
+	option   *opts
 }
 
-func New(cfg *config.Config, option ...EngineOption) (Engine, error) {
-	opts := defaultEngineOpts
+func New(cfg *config.Config, option ...Option) (Engine, error) {
+	opts := defaultOpts
 	for _, o := range option {
 		o(opts)
 	}
