@@ -6,7 +6,7 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"gopkg.in/yaml.v2"
+	"sigs.k8s.io/yaml"
 )
 
 func funcMap() template.FuncMap {
