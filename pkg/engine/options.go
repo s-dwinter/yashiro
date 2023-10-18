@@ -1,18 +1,19 @@
 package engine
 
-type EngineOption func(*engineOpts)
+// Option is configurable Engine behaver.
+type Option func(*opts)
 
-// Ignore Empty ignores empty value from external store.
-func IgnoreEmpty() EngineOption {
-	return func(co *engineOpts) {
-		co.IgnoreEmpty = true
+// IgnoreEmpty ignores empty value from external store.
+func IgnoreEmpty() Option {
+	return func(o *opts) {
+		o.IgnoreEmpty = true
 	}
 }
 
-type engineOpts struct {
+type opts struct {
 	IgnoreEmpty bool
 }
 
-var defaultEngineOpts = &engineOpts{
+var defaultOpts = &opts{
 	IgnoreEmpty: false,
 }
