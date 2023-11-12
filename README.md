@@ -2,6 +2,8 @@
 
 Yashiro is a templating engine with the external stores.
 
+This repository is depricated. Please use <https://github.com/dwango/yashiro>.
+
 * [Yashiro](#yashiro)
   * [Service](#service)
   * [Usage](#usage)
