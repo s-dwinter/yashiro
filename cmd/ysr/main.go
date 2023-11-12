@@ -14,7 +14,7 @@ func main() {
 	defer cancel()
 
 	if err := cmd.New().ExecuteContext(ctx); err != nil {
-		fmt.Println(err)
+		fmt.Fprintln(os.Stderr, err)
 		cancel()
 		os.Exit(1)
 	}
