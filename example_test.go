@@ -36,7 +36,7 @@ func Example() {
 
 	eng, err := yashiro.NewEngine(cfg)
 	if err != nil {
-		log.Fatalf("failed to crate engine: %s", err)
+		log.Fatalf("failed to create engine: %s", err)
 	}
 
 	text := `This is example code. The message is {{ .example.message }}.`
